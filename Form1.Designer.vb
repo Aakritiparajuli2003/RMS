@@ -22,121 +22,131 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        GroupBox1 = New GroupBox()
-        LinkLabel1 = New LinkLabel()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Panel1 = New Panel()
+        CheckBox1 = New CheckBox()
+        Button3 = New Button()
+        Label2 = New Label()
         Button2 = New Button()
         Button1 = New Button()
-        CheckBox1 = New CheckBox()
-        TextBox2 = New TextBox()
-        TextBox1 = New TextBox()
-        Label2 = New Label()
+        txtPass = New TextBox()
+        txtUser = New TextBox()
         Label1 = New Label()
         PictureBox1 = New PictureBox()
-        GroupBox1.SuspendLayout()
+        Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
-        ' GroupBox1
+        ' Panel1
         ' 
-        GroupBox1.BackColor = Color.PowderBlue
-        GroupBox1.Controls.Add(LinkLabel1)
-        GroupBox1.Controls.Add(Button2)
-        GroupBox1.Controls.Add(Button1)
-        GroupBox1.Controls.Add(CheckBox1)
-        GroupBox1.Controls.Add(TextBox2)
-        GroupBox1.Controls.Add(TextBox1)
-        GroupBox1.Controls.Add(Label2)
-        GroupBox1.Controls.Add(Label1)
-        GroupBox1.Controls.Add(PictureBox1)
-        GroupBox1.Location = New Point(12, 12)
-        GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(776, 350)
-        GroupBox1.TabIndex = 0
-        GroupBox1.TabStop = False
-        GroupBox1.Text = "GroupBox1"
-        ' 
-        ' LinkLabel1
-        ' 
-        LinkLabel1.AutoSize = True
-        LinkLabel1.Location = New Point(348, 300)
-        LinkLabel1.Name = "LinkLabel1"
-        LinkLabel1.Size = New Size(262, 25)
-        LinkLabel1.TabIndex = 8
-        LinkLabel1.TabStop = True
-        LinkLabel1.Text = "If you Are Not Registered ?Click"
-        ' 
-        ' Button2
-        ' 
-        Button2.Location = New Point(597, 239)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(116, 42)
-        Button2.TabIndex = 7
-        Button2.Text = "Cancel"
-        Button2.UseVisualStyleBackColor = True
-        ' 
-        ' Button1
-        ' 
-        Button1.Location = New Point(362, 239)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(131, 42)
-        Button1.TabIndex = 6
-        Button1.Text = "Login"
-        Button1.UseVisualStyleBackColor = True
+        Panel1.BackColor = Color.LightCyan
+        Panel1.BackgroundImageLayout = ImageLayout.None
+        Panel1.Controls.Add(CheckBox1)
+        Panel1.Controls.Add(Button3)
+        Panel1.Controls.Add(Label2)
+        Panel1.Controls.Add(Button2)
+        Panel1.Controls.Add(Button1)
+        Panel1.Controls.Add(txtPass)
+        Panel1.Controls.Add(txtUser)
+        Panel1.Controls.Add(Label1)
+        Panel1.Controls.Add(PictureBox1)
+        Panel1.ForeColor = Color.Black
+        Panel1.Location = New Point(12, 12)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(461, 615)
+        Panel1.TabIndex = 0
         ' 
         ' CheckBox1
         ' 
         CheckBox1.AutoSize = True
         CheckBox1.Checked = True
         CheckBox1.CheckState = CheckState.Checked
-        CheckBox1.Location = New Point(465, 175)
+        CheckBox1.Location = New Point(144, 422)
         CheckBox1.Name = "CheckBox1"
         CheckBox1.Size = New Size(162, 29)
-        CheckBox1.TabIndex = 5
+        CheckBox1.TabIndex = 8
         CheckBox1.Text = "Show Password"
         CheckBox1.UseVisualStyleBackColor = True
-        CheckBox1.Visible = False
         ' 
-        ' TextBox2
+        ' Button3
         ' 
-        TextBox2.Location = New Point(465, 118)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(248, 31)
-        TextBox2.TabIndex = 4
-        ' 
-        ' TextBox1
-        ' 
-        TextBox1.Location = New Point(465, 59)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(248, 31)
-        TextBox1.TabIndex = 3
+        Button3.BackColor = Color.Azure
+        Button3.Location = New Point(151, 557)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(155, 46)
+        Button3.TabIndex = 7
+        Button3.Text = "create account"
+        Button3.UseVisualStyleBackColor = False
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(335, 118)
+        Label2.Location = New Point(210, 529)
         Label2.Name = "Label2"
-        Label2.Size = New Size(87, 25)
-        Label2.TabIndex = 2
-        Label2.Text = "Password"
+        Label2.Size = New Size(0, 25)
+        Label2.TabIndex = 6
+        ' 
+        ' Button2
+        ' 
+        Button2.BackColor = SystemColors.GradientActiveCaption
+        Button2.Location = New Point(285, 477)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(133, 49)
+        Button2.TabIndex = 5
+        Button2.Text = "Cancel"
+        Button2.UseVisualStyleBackColor = False
+        ' 
+        ' Button1
+        ' 
+        Button1.BackColor = SystemColors.GradientActiveCaption
+        Button1.Location = New Point(60, 479)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(135, 47)
+        Button1.TabIndex = 4
+        Button1.Text = "Login"
+        Button1.UseVisualStyleBackColor = False
+        ' 
+        ' txtPass
+        ' 
+        txtPass.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        txtPass.Location = New Point(60, 354)
+        txtPass.Multiline = True
+        txtPass.Name = "txtPass"
+        txtPass.PasswordChar = "*"c
+        txtPass.PlaceholderText = "Password"
+        txtPass.Size = New Size(315, 49)
+        txtPass.TabIndex = 3
+        txtPass.TextAlign = HorizontalAlignment.Center
+        txtPass.UseSystemPasswordChar = True
+        ' 
+        ' txtUser
+        ' 
+        txtUser.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        txtUser.Location = New Point(60, 272)
+        txtUser.Multiline = True
+        txtUser.Name = "txtUser"
+        txtUser.PlaceholderText = "User Name"
+        txtUser.Size = New Size(315, 49)
+        txtUser.TabIndex = 2
+        txtUser.TextAlign = HorizontalAlignment.Center
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(335, 61)
+        Label1.Font = New Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Location = New Point(180, 211)
         Label1.Name = "Label1"
-        Label1.Size = New Size(94, 25)
+        Label1.Size = New Size(83, 30)
         Label1.TabIndex = 1
-        Label1.Text = "UserName"
+        Label1.Text = "Sign in"
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.BackColor = Color.PowderBlue
-        PictureBox1.BackgroundImage = My.Resources.Resources.download
-        PictureBox1.BackgroundImageLayout = ImageLayout.Center
-        PictureBox1.Image = My.Resources.Resources.download
-        PictureBox1.Location = New Point(6, 41)
+        PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), Image)
+        PictureBox1.BackgroundImageLayout = ImageLayout.Zoom
+        PictureBox1.Location = New Point(151, 35)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(209, 240)
+        PictureBox1.Size = New Size(156, 146)
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
         ' 
@@ -144,24 +154,31 @@ Partial Class Form1
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
-        Controls.Add(GroupBox1)
+        BackColor = Color.FromArgb(CByte(240), CByte(244), CByte(247))
+        ClientSize = New Size(485, 639)
+        Controls.Add(Panel1)
+        ForeColor = Color.Black
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
+        MinimizeBox = False
         Name = "Form1"
-        Text = "Form1"
-        GroupBox1.ResumeLayout(False)
-        GroupBox1.PerformLayout()
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "Login Form"
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents Button2 As Button
+    Friend WithEvents txtPass As TextBox
+    Friend WithEvents txtUser As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents CheckBox1 As CheckBox
+
 End Class
